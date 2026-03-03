@@ -1,0 +1,27 @@
+# BaseMail Security - DO NOT COMMIT THESE FILES!
+# Copy this to your project's .gitignore
+
+# BaseMail config directory
+.basemail/
+
+# Private keys (any location)
+**/private-key
+**/private-key.enc
+**/*.pem
+**/*.key
+
+# Mnemonics / Seed phrases
+*.mnemonic
+*.mnemonic.backup
+**/mnemonic*
+
+# Tokens (contain auth credentials)
+**/token.json
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
+
+# Audit logs may contain wallet addresses
+**/audit.log

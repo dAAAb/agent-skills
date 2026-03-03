@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+
+# Credentials
+credentials.json
+*-credentials.json
+*.key
+*.pem
+auth.json
+config.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Build outputs
+dist/
+build/
+*.tgz
+
+# Runtime
+.cache/
+tmp/
+
+# Wallet files
+wallet.json
+keystore.json
+private-key*
+mnemonic*
