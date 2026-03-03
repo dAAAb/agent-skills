@@ -38,7 +38,7 @@ def load_credentials():
 def get_headers(token: str, secret: str) -> dict:
     """Generate API headers with HMAC-SHA256 signature."""
     t = int(time.time() * 1000)
-    nonce = f"clawdbot{t}"
+    nonce = f"openclaw{t}"
     string_to_sign = f"{token}{t}{nonce}"
     
     sign = base64.b64encode(

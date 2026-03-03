@@ -14,9 +14,9 @@ import urllib.error
 
 API_BASE = "https://api.heygen.com"
 
-# 寶博預設設定
-DEFAULT_AVATAR_ID = "838320ce7ca646d3a6306c098c7ee89b"  # JCKOV1
-DEFAULT_VOICE_ID = "102b19ecd46b444c8098a33c8d8eb37f"   # JCKOV1 voice
+# Default settings (override with --avatar-id and --voice-id)
+DEFAULT_AVATAR_ID = ""  # Set via --avatar-id or HEYGEN_AVATAR_ID env
+DEFAULT_VOICE_ID = ""   # Set via --voice-id or HEYGEN_VOICE_ID env
 
 
 def get_api_key():

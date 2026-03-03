@@ -322,7 +322,7 @@ python3 /path/to/heygen/generate_video.py \
 1. **英文單字全黏在一起** — `Doubtthatyoucanwithwhatyouhavewhereyouare` → 要拆成 `Do what you can, with what you have, where you are.`
 2. **英文人名黏在一起** — `TheodoreRoosevelt` → `Theodore Roosevelt`
 3. **中文斷詞錯誤** — `開始行動祝` → `開始` `行動` `祝`
-4. **人名辨識錯誤** — `葛如君` → `葛如鈞`（每次都要修）
+4. **人名辨識錯誤** — `NAME_TYPO` → `NAME_CORRECT`（每次都要修）
 
 **修正流程：**
 1. 下載 transcript JSON

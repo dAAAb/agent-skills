@@ -26,17 +26,17 @@ curl -s "https://api.heygen.com/v2/voices" \
 Use the Python script for easy video generation:
 
 ```bash
-python3 /Users/vitalik/clawd/skills/heygen/scripts/generate_video.py \
-  --text "你好，我是葛如鈞" \
-  --avatar-id "838320ce7ca646d3a6306c098c7ee89b" \
-  --voice-id "102b19ecd46b444c8098a33c8d8eb37f" \
+python3 scripts/generate_video.py \
+  --text "Hello, this is a demo" \
+  --avatar-id "YOUR_AVATAR_ID" \
+  --voice-id "YOUR_VOICE_ID" \
   --output /tmp/heygen-video.mp4
 ```
 
 #### Options
 - `--text`: Script for the avatar to speak (required)
-- `--avatar-id`: Avatar ID (default: JCKOV1)
-- `--voice-id`: Voice ID (default: JCKOV1 voice)
+- `--avatar-id`: Avatar ID (default: MyAvatar)
+- `--voice-id`: Voice ID (default: MyAvatar voice)
 - `--output`: Output file path (default: /tmp/heygen-output.mp4)
 - `--dimension`: Video dimensions WxH (default: 1280x720)
 - `--aspect-ratio`: Aspect ratio (default: 16:9)
@@ -50,29 +50,29 @@ curl -s "https://api.heygen.com/v1/video_status.get?video_id=VIDEO_ID" \
   -H "X-Api-Key: $HEYGEN_API_KEY"
 ```
 
-## 寶博專用設定
+## your-avatar專用設定
 
 ### Avatars (已建立)
 | Name | Avatar ID |
 |------|-----------|
-| JCKOV1 | `838320ce7ca646d3a6306c098c7ee89b` |
-| JC Ko (v2.1) | `c121c484bf074033aab06a8455b94885` |
-| JC Ko (v2.2) | `91e70516d79043658917bc043390465f` |
+| MyAvatar | `YOUR_AVATAR_ID` |
+| MyAvatar (v2.1) | `YOUR_AVATAR_ID_V2` |
+| MyAvatar (v2.2) | `YOUR_AVATAR_ID_V3` |
 
 ### Voices (已建立)
 | Name | Voice ID |
 |------|----------|
-| JCKOV1 | `102b19ecd46b444c8098a33c8d8eb37f` |
-| JC Ko LYV | `7c8303cabd2a4882a63eb8be6cc9abef` |
-| JC Ko | `84e4663b7e18494e9159e7db2cd0b4f0` |
+| MyAvatar | `YOUR_VOICE_ID` |
+| MyAvatar LYV | `7c8303cabd2a4882a63eb8be6cc9abef` |
+| MyAvatar | `YOUR_VOICE_ID_V2` |
 
 ### 快速生成範例
 
 ```bash
-# 用寶博的 avatar + voice 生成影片
+# 用your-avatar的 avatar + voice 生成影片
 HEYGEN_API_KEY="$HEYGEN_API_KEY" \
-python3 /Users/vitalik/clawd/skills/heygen/scripts/generate_video.py \
-  --text "大家好，我是立法委員葛如鈞，今天要跟大家分享..." \
+python3 scripts/generate_video.py \
+  --text "Hello, this is a demo video..." \
   --output /tmp/baobao-video.mp4
 ```
 
