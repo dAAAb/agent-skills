@@ -2,7 +2,7 @@
 
 A collection of **agent skills** for Claude Code, Codex, Cursor, OpenClaw, Gemini CLI, and [40+ AI agents](https://agentskills.io/). Compatible with the open [Agent Skills](https://agentskills.io/) format.
 
-Give your AI agent Web3 wallets, onchain identity, smart home control, image generation, and more — autonomously.
+Give your AI agent Web3 wallets, onchain identity, smart home control, content creation, and more — autonomously.
 
 ## Quick Start
 
@@ -47,23 +47,10 @@ npx skills add dAAAb/agent-skills --skill base-wallet
 
 | Skill | Description | Requirements |
 |-------|-------------|-------------|
-| **[nano-banana-pro](./skills/nano-banana-pro/)** | Generate/edit images via Gemini | `uv`, Google AI API key |
-| **[sag](./skills/sag/)** | Text-to-speech via ElevenLabs | `sag` CLI, ElevenLabs API key |
-| **[openai-whisper-api](./skills/openai-whisper-api/)** | Transcribe audio via OpenAI Whisper API | OpenAI API key |
 | **[heygen](./skills/heygen/)** | AI avatar videos with HeyGen | Python 3, HeyGen API key |
-| **[podcast-summarizer](./skills/podcast-summarizer/)** | Summarize podcasts from Spotify, Apple Podcasts, RSS | `curl` |
 | **[daily-voice-quote](./skills/daily-voice-quote/)** | Daily voice quotes with cover images + avatar videos | ElevenLabs + HeyGen API keys |
 | **[elevenlabs-phone-reminder](./skills/elevenlabs-phone-reminder/)** | Voice call reminders via ElevenLabs + Twilio | ElevenLabs + Twilio |
-| **[summarize](./skills/summarize/)** | Summarize URLs, videos, podcasts, local files | `curl` |
-
-### 🛠️ Developer Tools
-
-| Skill | Description | Requirements |
-|-------|-------------|-------------|
-| **[github](./skills/github/)** | GitHub operations — issues, PRs, CI, code review | `gh` CLI |
-| **[nano-pdf](./skills/nano-pdf/)** | Edit PDFs with natural language | `nano-pdf` (pip) |
-| **[blogwatcher](./skills/blogwatcher/)** | Monitor blogs and RSS/Atom feeds for updates | `blogwatcher` CLI |
-| **[weather](./skills/weather/)** | Weather forecasts via wttr.in / Open-Meteo | `curl` (no API key!) |
+| **[podcast-summarizer](./skills/podcast-summarizer/)** | Summarize podcasts from Spotify, Apple Podcasts, RSS | `curl` |
 
 ### 🏠 Smart Home
 
