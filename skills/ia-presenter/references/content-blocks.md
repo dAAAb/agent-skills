@@ -53,7 +53,8 @@ all work):
 
 Chart-only keys (`chart`, `orientation`, `bar-type`, `line-type`, `color-type`,
 `xlabel`, `ylabel`, `xformat`, `colors`) are documented in `charts.md`. `header` /
-`footer` are also recognised by the same parser (per-slide header/footer text).
+`footer` are accepted by the same parser too (undocumented; probably per-slide header/footer
+text – verify before relying on it).
 
 Position classes produced: `position-left-top`, `position-center-center`, … ;
 size classes: `size-cover`, `size-contain`.

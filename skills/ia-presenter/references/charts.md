@@ -5,7 +5,7 @@ chart by adding metadata lines **immediately after the table** (no blank line). 
 in-app Inspector (Format → Table and Charts) writes the same metadata for you. Rendering
 uses billboard.js/d3 inside the engine (`infographics.js`).
 
-## Example (verified)
+## Example (verified: `Chart`, `Orientation`, `bar-type`, `yLabel`)
 
 ```
 | Quarter | Revenue | Cost |
@@ -29,12 +29,12 @@ Keep numbers plain (no units inside the cells).
 | `Chart` | `bar` \| `line` \| `pie` \| `donut` | required to turn the table into a chart |
 | `Orientation` | `vertical` (default) \| `horizontal` | bar charts; horizontal = rotated (`is-rotated`) |
 | `bar-type` | `stacked` \| (omit = separated) | stacked bars (`is-stacked`) |
-| `line-type` | `step` \| (omit = normal) | stepped line (`is-step`); the app UI calls it "Steps" |
+| `line-type` | `step` \| (omit = normal) | stepped line (`is-step`); the Inspector action is "Steps" – the exact value is not verified, let the Inspector write it once and copy the result |
 | `Color-Type` | `sequential` \| `differential` \| (omit = categorical accents) | sequential = shades of one color; differential = positive/negative coloring |
 | `xLabel` | text | x-axis label |
 | `yLabel` | text | y-axis label |
 | `xFormat` | `date` \| `number` \| `percent` | x-axis value formatting |
-| `colors` | comma-separated colors | override series colors (theme accents by default) |
+| `colors` | comma-separated colors (format not verified) | override series colors (theme accents by default) |
 | `Caption` | text | caption under the chart/table (or `[Caption]` line) |
 
 Keys are case-insensitive (`chart:`, `Chart:`, `yLabel:`, `ylabel:` …).
