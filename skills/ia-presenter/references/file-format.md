@@ -104,7 +104,12 @@ progress. 2.0 adds a Command Palette for formatting/export/slide actions.
 - Open a deck: `open -a "iA Presenter" "My Talk.iapresenter"`. The app is a standard
   document app; it is **not** AppleScript-scriptable (no sdef) – exports need the UI.
 - Preview for self-checking: with the Thumbnails sidebar visible, every slide is
-  rendered live in the left column. `scripts/preview_deck.sh deck.iapresenter out.png`
+  rendered live in the left column. The sidebar state is stored in the app's prefs
+  (`~/Library/Containers/net.ia.presenter/Data/Library/Preferences/net.ia.presenter.plist`):
+  `showThumbnails` (bool) and `"NSSplitView Subview Frames Document Split View"`
+  (sidebar width / collapsed flag). With the app quit, `defaults write <plist> showThumbnails -bool true`
+  and a wider first frame (e.g. `"0, 0, 330, 900, NO, NO"`) make every launch show ~5 rendered
+  thumbnails – handy when UI scripting is not permitted. Restore the user's values afterwards. `scripts/preview_deck.sh deck.iapresenter out.png`
   opens the deck and captures the screen (requires Screen Recording permission for your
   terminal; inside sandboxed agents run the capture outside the sandbox).
 - The app watches the theme in use and re-renders on file change; edits to `text.md` of
