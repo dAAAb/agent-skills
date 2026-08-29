@@ -5,7 +5,7 @@ license: MIT
 compatibility: "Authoring works anywhere. Previewing, exporting and theme installation need macOS with iA Presenter 2.x. Helper scripts need python3."
 metadata:
   author: dAAAb
-  version: "1.0.0"
+  version: "1.0.1"
   verified-with: "iA Presenter 2.0.2 (build 20026), macOS"
   openclaw:
     emoji: "🎞️"
