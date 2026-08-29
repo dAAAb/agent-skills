@@ -5,7 +5,7 @@ license: MIT
 compatibility: "Authoring works anywhere. Previewing, exporting and theme installation need macOS with iA Presenter 2.x. Helper scripts need python3."
 metadata:
   author: dAAAb
-  version: "1.0.1"
+  version: "1.0.2"
   verified-with: "iA Presenter 2.0.2 (build 20026), macOS"
   openclaw:
     emoji: "🎞️"
@@ -232,6 +232,8 @@ accents, gradients), a CSS file, optional fonts/images and a `template.png` thum
 - TAB, not spaces. A TABbed table or code fence becomes a code block.
 - Metadata lines must touch the block they modify (no blank line between).
 - `Layout: Columns` is broken; `Layout: Grid` swallows the title.
+- A heading + blank line + table becomes a split (narrow table). Keep the table right under the
+  heading (same cell) for full width. CJK text works fine; system font falls back to PingFang.
 - `template` values are lowercase with spaces; wrong values fall back silently.
 - iA's shipped JSON has trailing commas (lenient parser). Write strict JSON anyway.
 - Fonts: `template.json` gets the *display* name, `presets.json` the *CSS family*.

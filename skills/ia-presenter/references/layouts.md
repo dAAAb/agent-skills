@@ -29,6 +29,7 @@ Rules of thumb (verified):
 | image with `Background: true` + heading(s) | text over the full-bleed image |
 | one lone image | full-bleed image |
 | flush-left table | a real table (or chart with `Chart:`) |
+| `## Title` + blank + table | title **beside** a narrow table (split) – keep the table in the same cell as the heading (no blank line) for a full-width table |
 
 Keep a heading and its subtitle in the **same** cell (no blank line) when they belong
 together; put a blank line between things that should be laid out separately.
