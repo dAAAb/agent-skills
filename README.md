@@ -52,6 +52,12 @@ npx skills add dAAAb/agent-skills --skill base-wallet
 | **[elevenlabs-phone-reminder](./skills/elevenlabs-phone-reminder/)** | Voice call reminders via ElevenLabs + Twilio | ElevenLabs + Twilio |
 | **[podcast-summarizer](./skills/podcast-summarizer/)** | Summarize podcasts from Spotify, Apple Podcasts, RSS | `curl` |
 
+### 🎞️ Presentations
+
+| Skill | Description | Requirements |
+|-------|-------------|-------------|
+| **[ia-presenter](./skills/ia-presenter/)** | Write, lint, package and theme [iA Presenter](https://ia.net/presenter) decks — Markdown → `.iapresenter` bundles with speaker notes, layouts, charts, custom themes (verified on 2.0.2) | Python 3, iA Presenter (macOS) for preview/export |
+
 ### 🏠 Smart Home
 
 | Skill | Description | Requirements |
